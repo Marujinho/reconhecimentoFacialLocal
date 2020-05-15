@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+
+  <script defer>
+
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDacZrt6cnONYsPsDWAmo6G0b0HISnsKc8",
+        authDomain: "condu-me.firebaseapp.com",
+        databaseURL: "https://condu-me.firebaseio.com",
+        projectId: "condu-me",
+        storageBucket: "condu-me.appspot.com",
+        messagingSenderId: "569114306902",
+        appId: "1:569114306902:web:45d53cc4884fe3eb1fcef7"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      var storage = firebase.storage();
+
+
+  </script>
+  <script  src="face-api.min.js"></script>
+  <script defer  src="script.js"></script>
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <!-- <button onclick="myFunction()">Click me</button> -->
+  <video id="video" width="720" height="560" autoplay muted></video>
+
+  <div id='test' style="margin-top:50px"></div>
+</body>
+</html>
+
+
+
+
+<script>
+
+function myFunction()
+{
+  // fetch('http://192.168.1.178:80', {
+  //     method: 'GET',
+  //     })
+  //     .then(response => response.text())
+  //     .then(data => {
+  //
+  //         alert(data)
+  //     })
+  //     .catch(err => {
+  //         alert(err)
+  //     })
+}
+
+
+
+
+</script>
